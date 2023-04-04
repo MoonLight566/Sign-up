@@ -1,0 +1,155 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }
+html body{
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0px;
+    font-family: monospace;
+  }
+.main{
+    display: flex;
+    justify-content: flex;
+    width:100vw;
+    
+}
+
+.image{
+    flex-grow: 1;
+    position: relative;
+    width: 60vw;
+    min-width: 345px;
+    height: 100vh;
+    background-image: url("img/pawel-czerwinski-z7prq6BtPE4-unsplash.jpg"); 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;   
+}
+.img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.img div{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.image p{
+    font-size: .9rem;
+    color:#ffffff93;
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+}
+.header{
+    font-size: larger;
+    margin-left: 2rem;
+}
+.form{
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 2;
+    background-color: #dddddd;
+}
+.form1{
+    padding: 1rem 1rem 3rem 2rem;
+    width: 100%;
+    background-color: white;
+}
+
+form{
+    display: flex;
+    width: 60vw;
+    flex-flow: row wrap;
+    gap: 1rem;
+    font-size: 1rem;
+}
+label{
+    position: relative;
+    width: 15rem;
+    margin-bottom: 15px;
+}
+input{
+    font-family:serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+    font-size: 1rem;
+    margin-top: 5px;
+
+}
+input:focus{
+    border: none;
+    outline:none;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.342)
+}
+input:invalid:focus{
+    border: 2px solid #FF4564;
+}
+input:valid:focus{
+    border:  2px solid #03c061;
+}
+.bottom{
+    padding:0px 2vw;
+    margin-top: 1rem;
+}
+
+button{
+    display: block;
+    padding: 1rem;
+    background-color:   #0834fa;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    
+}
+button:hover{
+    background-color: #0020ad;
+}
+p{
+    margin-bottom: 2rem;
+}
+a{
+    color: #BE6DB7;
+}
+.Error{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    color: #ff4564;
+    position: absolute;
+}
+@media screen and (max-width:850px){
+.main{flex-direction: column;}
+.image{
+    width:100vw;
+    height: 20rem;
+}
+.header , .form1,.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.form, form, .bottom{
+    width: 100vw;
+    justify-content: center;
+}
+}
+@media screen and (max-width:500px){
+    label{
+        margin-bottom: 25px;
+    }
+}

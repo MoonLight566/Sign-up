@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="image">
+            <div class="img">
+                <img src="img/odin-lined.png" alt="picture of odin" width="100px" height="120px">
+                <div>SIGN-UP FORM</div>
+            </div>
+            <p>Photo by Pawel Czerwinski on Unsplash</p>
+        </div>
+        <div class="form">
+            <div class="header">
+                <p>This Is Not A Real Online Service! You Know You Need Something Like This In Your Life To Help You Realize Your Deepest Dreams. Sign Up Now To Get Started.</p>
+                <p>You know You Want To.</p>
+            </div>
+            <div class="form1">
+            <p>LET'S DO THIS!</p>
+                <form id="my-frist">
+                    <label for="First">FIRST NAME
+                    <input type="text" id="First" name="Fname" required/>
+                    <div id="fname-error" class="Error"></div>
+                </label>
+                    <label for="Last">LAST NAME
+                    <input type="text" id="Last" name="Lname" required/>
+                    <div id="lname-error" class="Error"></div>
+                </label>
+                        <label for="email">EMAIL
+                        <input type="email" id="email" name="email" required/>
+                        <div id="email-error" class="Error"></div>
+                    </label>
+                        <label for="phone">PHONE NUMBER
+                        <input type="text" id="phone" inputmode="numeric" pattern="\d{10}" required/>
+                        <div id="phone-error" class="Error"></div>                
+                    </label>
+                        <label for="password">PASSWORD
+                       <input type="password" id="password" autocomplete="new-password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"/>
+                       <div id="password-error" class="Error"></div>
+                    </label>
+                       <label for="Confirm">CONFIRM PASSWORD
+                       <input type="password" id="Confirm"  autocomplete="current-password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" />
+                       <div id="confirm-error" class="Error"></div>
+                    </label>
+                </form>
+            </div>
+           <div class="bottom">
+            <button form="my-frist" type="submit">CREATE ACCOUNT</button>
+                <P>ALREADY HAVE AN ACCOUNT? <a href="">LOG IN</a></P>
+           </div>
+            </div>
+    </div>
+</body>
+</html>
